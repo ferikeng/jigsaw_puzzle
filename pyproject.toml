@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "jigsaw-puzzle"
+version = "0.1.0"
+description = ""
+authors = ["Erik Eng <ferikeng@gmail.com>"]
+readme = "README.md"
+packages = [{include = "jigsaw_puzzle"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "^0.13.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
