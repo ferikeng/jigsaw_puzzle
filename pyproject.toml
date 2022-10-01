@@ -8,6 +8,7 @@ packages = [{include = "jigsaw_puzzle"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+numpy = "^1.23.3"
 
 [tool.poetry.group.dev.dependencies]
 ipdb = "^0.13.9"
