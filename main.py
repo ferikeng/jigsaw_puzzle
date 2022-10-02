@@ -48,7 +48,8 @@ class Piece:
             matr_rot = Piece._move_to_top_left_corner(matr_rot)
             all_placements.extend(Piece._gen_all_translations(matr_rot))
 
-        # TODO: check if there are duplicates in the placements. Can happen if pieces are symmetrical
+        # Remove duplicates (due to symmetry)
+        all_placements = np.unique(all_placements, axis=0)
 
         return all_placements
 
